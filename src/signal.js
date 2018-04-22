@@ -1,6 +1,11 @@
+let current = 'red'
+
 module.exports =  {
-  change: () => {},
+  change: () => {
+    current = 'yellow'
+  },
+
   getCurrent: () => {
-    return 'red'
+    return current
   },
 }
