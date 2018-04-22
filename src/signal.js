@@ -2,10 +2,12 @@ let current = 'red'
 
 module.exports =  {
   change: () => {
-    if (current === 'red'{
+    if (current === 'red') {
       current = 'yellow'
-    }else{
+    } else if (current === 'yellow') {
       current = 'green'
+    } else if (current === 'green') {
+      current = 'yellow'
     }
   },
 

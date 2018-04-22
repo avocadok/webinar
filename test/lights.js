@@ -17,8 +17,17 @@ test('changes to yellow as second', t =>{
 })
 
 test('changes to yellow as second', t =>{
- signal.change()
+  signal.change()
 
- const light = signal.getCurrent()
+  const light = signal.getCurrent()
 
- t.is(light, 'green')
+  t.is(light, 'green')
+})
+
+test('changes to yellow as fourth', t =>{
+  signal.change()
+
+  const light = signal.getCurrent()
+
+  t.is(light, 'yellow')
+})
