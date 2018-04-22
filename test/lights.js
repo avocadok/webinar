@@ -15,3 +15,10 @@ test('changes to yellow as second', t =>{
 
  t.is(light, 'yellow')
 })
+
+test('changes to yellow as second', t =>{
+ signal.change()
+
+ const light = signal.getCurrent()
+
+ t.is(light, 'green')
