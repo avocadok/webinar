@@ -1,4 +1,6 @@
 module.exports =  {
   change: () => {},
-  getCurrent: () => {},
+  getCurrent: () => {
+    return 'red'
+  },
 }
